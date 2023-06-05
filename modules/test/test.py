@@ -1,4 +1,6 @@
-import fibo as fib
+import socket
+import requests
 print("Hello from test.py")
 print("This is a test module")
-fib.fib(500)
+print(socket.gethostname())
+print(requests.get("https://api.ipify.org").text)
