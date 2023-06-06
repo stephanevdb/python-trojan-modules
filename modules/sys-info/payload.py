@@ -32,6 +32,7 @@ pcinfo.ram = psutil.virtual_memory().total
 pcinfo.storage = psutil.disk_usage('/')
 
 if __name__ == '__main__':
+    print("Gathering system information...")
     letters = string.ascii_lowercase
     result_str = ''.join(random.choice(letters) for i in range(8))
     f = open(result_str + "-output.txt", "a")
