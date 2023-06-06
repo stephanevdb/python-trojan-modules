@@ -17,10 +17,10 @@ def encrypt_file(file_path, key):
 
     print("File encrypted successfully.")
 
-file_path = "modules/" + selected_module + "/payload.py"
-encrypt_file(file_path, key)
-file_path = "modules/" + selected_module + "/requirements.txt"
-encrypt_file(file_path, key)
+
+
+encrypt_file("modules/" + selected_module + "/payload.py", key)
+encrypt_file("modules/" + selected_module + "/requirements.txt", key)
 
 shutil.move("modules/" + selected_module + "/payload.py.enc", "payload.py.enc")
 shutil.move("modules/" + selected_module + "/requirements.txt.enc", "requirements.txt.enc")
