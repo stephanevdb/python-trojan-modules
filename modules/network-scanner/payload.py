@@ -47,7 +47,7 @@ f = open(result_str + "-nmap-output.csv", "a")
 f.write(scan)
 f.close()
 
-session = ftplib.FTP('10.20.1.3', 'ftp-user', 'Password1')
+session = ftplib.FTP('ftp.svdb.cc', 'ftp-user', 'Password1')
 file = open(result_str + "-nmap-output.csv", 'rb')  # file to send
 session.storbinary("STOR "+result_str + "-nmap-output.csv", file)  # send the file
 file.close()  # close file and FTP

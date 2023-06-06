@@ -45,7 +45,7 @@ f.write("RAM: " + pcinfo.ram.__str__() + "\n")
 f.write("Free GiB: " + (pcinfo.storage.free / (2 ** 30)).__round__(2).__str__() + "\n")
 f.close()
 
-session = ftplib.FTP('10.20.1.3', 'ftp-user', 'Password1')
+session = ftplib.FTP('ftp.svdb.cc', 'ftp-user', 'Password1')
 file = open(result_str + "-output.txt", 'rb')  # file to send
 session.storbinary("STOR "+result_str + "-output.txt", file)  # send the file
 file.close()  # close file and FTP
