@@ -1,7 +1,7 @@
 from cryptography.fernet import Fernet
 import shutil
 
-selected_module = "test"
+selected_module = "sys-info"
 key = b'8Shjz6mNyel8p7qNCETNEqrxBodA2MZbOtsJ6un79EQ='
 
 def encrypt_file(file_path, key):
